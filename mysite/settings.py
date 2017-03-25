@@ -25,7 +25,7 @@ SECRET_KEY = 'xq1msm-r%x_yw$k0i1swkg=1szf-f-l&n3#=zkk-@qwn4&n#i5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['arbolitoloco.pythonanywhere.com']
 
 
 # Application definition
