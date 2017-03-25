@@ -8,11 +8,15 @@
         <p>Oie!</p>
         <p>Funciona!</p>
         <img src="http://citystudiovancouver.com/wp-content/uploads/2012/05/2qqcdAY.gif">
-        <div>
-        	<h2><a href="">Meu primeiro post</a></h2>
-        	<p>publicado em: </p>
-        	<p>Texto</p>
-        </div>
+
+        {% for post in posts %}
+          <div>
+              <p>publicado em {{ post.published_date }}</p>
+              <h2><a href="">{{ post.title }}</a></h2>
+              <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+        {% endfor %}
+
         <hr>
         <p><a href="https://djangogirls.org">Django Girls</a></p>
     </body>
